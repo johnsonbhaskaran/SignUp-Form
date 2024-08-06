@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+:root {
+  color-scheme: dark only;
+  font-family: Manrope, Arial, sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/***********************************************
+
+    GLOBAL STYLES
+
+***********************************************/
+
+body {
+  background-image: url(./images/antonio-janeski-BG.jpg);
+  background-color: #111;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.auth-modal {
+  border: 1px solid #dddddd55;
+  background-color: #333;
+  width: 30em;
+  padding: 2.5em;
+  border-radius: 1em;
+  box-shadow: rgba(0, 0, 0, 0.05) 0 6px 24px 0, rgba(0, 0, 0.08) 0 0 0 1px;
+}
+
+.auth-modal form {
+  display: flex;
+  flex-direction: column;
+}
+
+.auth-modal input {
+  padding: 0.7rem;
+  margin: 0.3rem;
+  font-size: 1.1rem;
+}
+
+.auth-modal #tandc {
+  accent-color: greenyellow;
+  cursor: pointer;
+  width: 1.2rem;
+  height: 1.2rem;
+  margin-left: -100px;
+  margin: 0.8rem 0 0.8rem -100px;
+}
+
+.auth-modal .form-button {
+  color: white;
+  text-transform: uppercase;
+  font-size: 15px;
+  padding: 16px 30px;
+  border-radius: 30px;
+  border: none;
+  margin: 10px 0 16px;
+  background-image: linear-gradient(
+    45deg,
+    rgb(185, 48, 254),
+    rgb(255, 64, 153)
+  );
+  font-family: inherit;
+  letter-spacing: 0.7ch;
+  cursor: pointer;
+  width: 20em;
+  margin-left: 3.5em;
+}
+
+.auth-modal .form-button:hover {
+  background-image: linear-gradient(
+    45deg,
+    rgb(255, 64, 153),
+    rgb(185, 48, 254)
+  );
+}
+
+h2 {
+  text-transform: uppercase;
+  /* font-style: italic; */
+  margin: 1rem 0;
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1.1rem;
+  margin-bottom: 1.2rem;
+}
+
+.auth-modal .link-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.auth-modal .link-container img {
+  width: 170px;
+  margin: 5px;
+}
+
+.close-icon {
+  float: right;
+  font-size: x-large;
+  margin: 0 0 5px 5px;
+  padding: 1px;
+  cursor: pointer;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  /* border: none; */
+  outline: 1px solid greenyellow;
+}
